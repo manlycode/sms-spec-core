@@ -1,4 +1,11 @@
+require "bundler/setup"
+Bundler.setup
+
+require "phone"
+Phoner::Phone.default_country_code = "1"
+
 require "sms/spec/core/version"
+require "sms/spec/core/message"
 
 module SMS::Spec
   module Core
