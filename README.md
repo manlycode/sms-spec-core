@@ -1,4 +1,4 @@
-# Sms::Spec::Core
+# SMS::Spec::Core
 
 TODO: Write a gem description
 

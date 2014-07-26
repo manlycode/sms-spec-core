@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "sms_spec/core/version"
+require "sms/spec/core/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "sms-spec-core"
-  spec.version       = Sms::Spec::Core::VERSION
+  spec.version       = SMS::Spec::Core::VERSION
   spec.authors       = ["Chris Rittersdorf"]
   spec.email         = ["chris.rittersdorf@collectiveidea.com"]
   spec.summary       = "TODO: Write a short summary. Required."
