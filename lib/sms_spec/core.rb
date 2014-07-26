@@ -1,7 +1,7 @@
-require 'sms/spec/core/version'
-require 'sms/spec/core/message_center'
+require "sms_spec/core/version"
+require "sms_spec/core/message_center"
 
-module SmsSpec
+module SMSSpec
   # SmsSpec::Core
   # Helps you test your sms messages in applications
   module Core
