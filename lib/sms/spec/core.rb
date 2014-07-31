@@ -6,6 +6,7 @@ Phoner::Phone.default_country_code = "1"
 
 require "sms/spec/core/version"
 require "sms/spec/core/message"
+require "sms/spec/core/message_center"
 
 module SMS::Spec
   module Core
