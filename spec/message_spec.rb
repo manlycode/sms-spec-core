@@ -1,10 +1,12 @@
 require "spec_helper"
 
 describe SMS::Spec::Core::Message do
-  it "is empty to begin" do
-    expect(subject.body).to be_nil
-    expect(subject.from).to be_nil
-    expect(subject.to).to be_nil
+  subject { SMS::Spec::Core::Message.new(to: "616-555-1234", from: "616-555-5678", body: "Hello") }
+
+  it "assigns opts to the corresponding attributes" do
+    expect(subject.body).to eq("Hello")
+    expect(subject.from).to_not be_nil
+    expect(subject.to).to_not be_nil
   end
 
   it "can set body, from, and to directly" do

@@ -4,6 +4,12 @@ module SMS::Spec::Core
 
     attr_reader :body, :from, :to
 
+    def initialize(opts={})
+      self.body = opts[:body]
+      self.to = opts[:to]
+      self.from = opts[:from]
+    end
+
     def body=(text)
       if text.size > CHARACTER_LIMIT
         raise %(The message: \n "#{text}"\n\n contains (#{text.size}/#{CHARACTER_LIMIT}) characters)
